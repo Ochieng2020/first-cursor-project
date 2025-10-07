@@ -1,0 +1,22 @@
+{
+  "name": "echo-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start -c",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "expo": "~51.0.10",
+    "react": "18.3.1",
+    "react-native": "0.74.3",
+    "react-native-paper": "^5.12.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.7",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "ESNext",
+    "jsx": "react-native",
+    "strict": true,
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
+    "paths": {
+      "echo-shared": ["../shared/src"]
+    }
+  },
+  "include": ["app/**/*", "index.ts", "index.tsx"]
+}
