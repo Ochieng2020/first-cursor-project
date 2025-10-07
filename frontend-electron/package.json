@@ -1,0 +1,31 @@
+{
+  "name": "echo-electron",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"vite --config vite.renderer.config.ts\" \"wait-on tcp:5173 && electronmon -r ts-node/register/transpile-only electron/main.ts\"",
+    "build": "vite build --config vite.renderer.config.ts && tsc -p tsconfig.main.json",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.10",
+    "@tailwindcss/forms": "^0.5.9",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "electron": "^31.2.1",
+    "electronmon": "^2.0.2",
+    "ts-node": "^10.9.2",
+    "vite": "^5.4.8",
+    "@vitejs/plugin-react": "^4.3.2",
+    "concurrently": "^9.0.1",
+    "wait-on": "^7.2.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45"
+  }
+}
